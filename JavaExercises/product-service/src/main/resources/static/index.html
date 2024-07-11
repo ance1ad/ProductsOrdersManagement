@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product and Order Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Управление продуктами и заказами</h1>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="text" id="product-description" placeholder="Product Description" required>
+                <input type="number" id="product-price" placeholder="Product Price" required>
+                <button type="submit">Add Product</button>
+            </form>
+            <ul id="product-list"></ul>
+        </section>
+        <section id="orders">
+            <h2>Orders</h2>
+            <form id="order-form">
+                <select id="product-select" required></select>
+                <input type="number" id="order-quantity" placeholder="Quantity" required>
+                <button type="submit">Create Order</button>
+            </form>
+            <ul id="order-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
